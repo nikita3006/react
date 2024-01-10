@@ -48,4 +48,14 @@ The repository .gitignore file excludes the following folders:
 ## By ignoring these folders, each developer can build the project locally without sharing or tracking unnecessary files, maintaining a clean repository focused on source code and configuration files.
 
 
-## adding browerlist in package.jsom
+## adding browerslist in package.json
+
+## adding a script  as start in package.json to create a development build 
+
+## adding a script  as build in package.json to create a production build 
+
+-- how to start a program in development and production
+
+npm run start //npm start
+npm run build
+
