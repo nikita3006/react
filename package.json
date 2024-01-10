@@ -2,7 +2,6 @@
   "name": "react",
   "version": "1.0.0",
   "description": "It is about React basic",
-  "main": "App.js",
   "scripts": {
     "test": "jest"
   },
@@ -13,9 +12,15 @@
   "keywords": [
     "[]"
   ],
-  "author": "nikitaNegi",
+  "author": "nikita",
   "license": "ISC",
   "devDependencies": {
     "parcel": "^2.11.0"
-  }
+  },
+  "dependencies": {
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": [
+    "last 48 versions"
+  ]
 }
