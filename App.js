@@ -4,6 +4,7 @@ import  ReactDOM  from 'react-dom/client';
 import logo from './images/logo..foodie.png';
 import './App.css';
 import './Header.css';
+import './Footer.css'
                           
 const Header = ()=> {
   return(
@@ -22,10 +23,29 @@ const Header = ()=> {
   )
 }
 
+
+const Footer = () =>{
+  return(
+    <div className='footer'>
+      <span className='copyright'>
+          <p>All right goes to &copy; NikitaNegi(foodie)</p>
+      </span>
+      <div className='footer-list'>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact Us</li>
+        <li>More</li>
+      </ul>
+      </div>
+    </div>
+  )
+}
 const AppLayout = () =>{
   return(
    <div className='app'>
       <Header/>
+      <Footer/>
    </div>
   )
 }

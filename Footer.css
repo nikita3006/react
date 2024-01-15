@@ -1,0 +1,21 @@
+.footer{
+    background-color: grey;
+    display: flex;
+    padding:20px;
+}
+.copyright{
+    text-align: center;
+    margin:5px;
+}
+.footer-list ul li{
+  list-style-type: none;
+  display: flex; 
+}
+.footer-list ul {
+    display:flex ;
+    justify-content: space-between; 
+    text-align: center;
+    margin-left: 600px;
+    color:black;
+   gap:20px;
+  }
