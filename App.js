@@ -23,9 +23,8 @@ const Header = () => {
      </div>
   )
 }
-const ResCard =(props) =>{
-  const {resData} =props;
-  console.log(resData)
+const ResCard =({resData}) =>{
+  const {title,cuisine,rating,time} =resData; //destructing
    return(
     <div className='layout'>
     <div className='container'>
@@ -34,10 +33,10 @@ const ResCard =(props) =>{
             <img src={food} alt='card-image' className='image'/>
           </span>
         <div className='card-details'>
-            <h3>{resData.data.title}</h3>
-            <h4>{resData.data.cuisine}</h4>
-            <h5>{resData.data.rating}stars</h5>
-            <h5>{resData.data.time}min</h5>
+            <h3>{title}</h3>
+            <h4>{cuisine}</h4>
+            <h5>{rating}stars</h5>
+            <h5>{time}min</h5>
         </div>
       </div>
     </div>
@@ -45,37 +44,36 @@ const ResCard =(props) =>{
     
   )
 }
-const resObj={
- data: {
-    id:"1",
-    title:"kfc",
-    cuisine:"indian",
-    rating:"4",
-    time: "30"
-},
-data:{
-  id:"2",
-  title:"sdfd",
-  cuisine:"hjkh",
-  rating:"3",
-  time: "40"
-},
-data:{
-  id:"3",
-  title:"dsfsdf",
-  cuisine:"awq",
-  rating:"4.3",
-  time: "20 "
-},
-data:{
-  id:"4",
-  title:"sdfs",
-  cuisine:"sdfss",
-  rating:"4.2 ",
-  time: "10"
-}
-
-}
+const resObj = [
+  {
+    id: "1",
+    title: "kfc",
+    cuisine: "indian",
+    rating: "4",
+    time: "30",
+  },
+  {
+    id: "2",
+    title: "sdfd",
+    cuisine: "hjkh",
+    rating: "3",
+    time: "40",
+  },
+  {
+    id: "3",
+    title: "dsfsdf",
+    cuisine: "awq",
+    rating: "4.3",
+    time: "20 ",
+  },
+  {
+    id: "4",
+    title: "sdfs",
+    cuisine: "sdfss",
+    rating: "4.2",
+    time: "10",
+  },
+];
 
 const Body = () => {
   return(
@@ -84,10 +82,9 @@ const Body = () => {
       <input type='search' placeholder='search' className='searchInput'/>
     </div>
     <div className='resList'>
-        <ResCard resData={resObj}/>
-        <ResCard resData={resObj}/>
-        <ResCard resData={resObj}/>
-        <ResCard resData={resObj}/>
+       {resObj.map((resData) => (
+          <ResCard key={resData.id} resData={resData} />
+        ))}
     </div>
     </>
   )
