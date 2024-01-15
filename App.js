@@ -1,34 +1,35 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
 
-// JSX is like HTML or XML syntax
-// const jsxHeading = <h1 className='head'>Nikita writing using jsx</h1>;
-// console.log(jsxHeading); // Remove the second argument "red"
+import React from 'react';
+import  ReactDOM  from 'react-dom/client';
+import logo from './images/logo..foodie.png';
+import './App.css';
+import './Header.css';
+                          
+const Header = ()=> {
+  return(
+     <div className='header'>
+        <div className='logo-image'>
+            <img src={logo} alt="logo" className='logo'/>
+        </div>
+      <div className='nav-items'>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Menu List</li>
+        </ul>
+      </div>
+     </div>
+  )
+}
 
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(jsxHeading);
-
-const elm = <span>nikita react element</span>
-const Title = ()=>(
-    <h1>  
-        Hi I am react 
-    </h1>
-)
-    
+const AppLayout = () =>{
+  return(
+   <div className='app'>
+      <Header/>
+   </div>
+  )
+}
 
 
-//React functional Component
-const Header = () => {
-  return (
-    <>
-      {/* <h2>{20000}</h2> */}
-      <h1>{elm}</h1>
-      {Title()}
-      <Title/>
-      <Title></Title>
-      <h1>Functional Component</h1>
-    </>
-  );
-};
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Header />);
+root.render(<AppLayout/>)

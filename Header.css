@@ -1,0 +1,26 @@
+.header{
+    background-color: black;
+    display: flex;   
+}
+.logo{
+    width:60px;
+    height:60px;
+    padding:20px 25px;
+}
+.nav-items ul{
+    display:flex ;
+    justify-content: space-around; 
+    text-align: center;
+    margin-left: 800px;
+    font-size: larger;
+    color:white;
+    margin-top: 20px;
+}
+.nav-items ul li{
+    padding:20px;
+    list-style-type: none; 
+}
+.nav-items li:hover{
+    background-color: rgb(142, 142, 44);
+    cursor: pointer;
+}
