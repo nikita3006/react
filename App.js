@@ -24,8 +24,9 @@ const Header = () => {
   )
 }
 const ResCard =(props) =>{
-  console.log(props)
-  return(
+  const {resData} =props;
+  console.log(resData)
+   return(
     <div className='layout'>
     <div className='container'>
       <div className='resCard'>
@@ -33,10 +34,10 @@ const ResCard =(props) =>{
             <img src={food} alt='card-image' className='image'/>
           </span>
         <div className='card-details'>
-            <h3>{props.title}</h3>
-            <h4>{props.cuisine}</h4>
-            <h5>{props.rating}</h5>
-            <h5>{props.time}</h5>
+            <h3>{resData.data.title}</h3>
+            <h4>{resData.data.cuisine}</h4>
+            <h5>{resData.data.rating}stars</h5>
+            <h5>{resData.data.time}min</h5>
         </div>
       </div>
     </div>
@@ -44,6 +45,38 @@ const ResCard =(props) =>{
     
   )
 }
+const resObj={
+ data: {
+    id:"1",
+    title:"kfc",
+    cuisine:"indian",
+    rating:"4",
+    time: "30"
+},
+data:{
+  id:"2",
+  title:"sdfd",
+  cuisine:"hjkh",
+  rating:"3",
+  time: "40"
+},
+data:{
+  id:"3",
+  title:"dsfsdf",
+  cuisine:"awq",
+  rating:"4.3",
+  time: "20 "
+},
+data:{
+  id:"4",
+  title:"sdfs",
+  cuisine:"sdfss",
+  rating:"4.2 ",
+  time: "10"
+}
+
+}
+
 const Body = () => {
   return(
     <>
@@ -51,8 +84,10 @@ const Body = () => {
       <input type='search' placeholder='search' className='searchInput'/>
     </div>
     <div className='resList'>
-        <ResCard  title="kfc" cuisine="indian" rating="4 stars" time="30 min"/>
-        <ResCard  title="alu" cuisine="indian" rating="3 stars" time="40 min"/> 
+        <ResCard resData={resObj}/>
+        <ResCard resData={resObj}/>
+        <ResCard resData={resObj}/>
+        <ResCard resData={resObj}/>
     </div>
     </>
   )
