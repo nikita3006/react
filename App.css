@@ -2,3 +2,40 @@
     margin:0px;
     padding:0px;
 }
+
+.searchLayout{
+    padding:15px 10px;
+}
+
+.searchInput {  
+   width:500px;
+   border:2px solid grey;
+   margin-left: 350px;
+   padding:10px;
+   border-radius: 15px;
+}
+.searchLayout :hover {  
+   cursor: pointer;
+   
+ }
+.resList{
+    display: flex;
+    flex-wrap: wrap;
+    padding:15px;
+    margin-left:90px;
+    gap:10px;
+}
+.container{
+    border:2px solid black;
+    width:250px;
+}
+.container :hover{
+    cursor: pointer;
+}
+ .image{
+    width:250px;
+    height:250px;
+ }
+ .card-details{
+    margin:5px;
+ }
