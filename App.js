@@ -82,8 +82,8 @@ const Body = () => {
       <input type='search' placeholder='search' className='searchInput'/>
     </div>
     <div className='resList'>
-       {resObj.map((resData) => (
-          <ResCard key={resData.id} resData={resData} />
+       {resObj.map((Data) => (
+          <ResCard key={Data.id} resData={Data} />
         ))}
     </div>
     </>
