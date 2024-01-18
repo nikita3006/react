@@ -91,3 +91,8 @@ npm run build
 ## React Function Components
 - React components can be functional, returning JSX code.
 - Components should start with a capital letter to differentiate them from regular HTML elements.
+
+
+## there will be two type of export 
+- export default -- use when we have to export only one component.
+-naming export -- use when we have to export more than one components.
