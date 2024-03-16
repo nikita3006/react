@@ -8,7 +8,7 @@ import './Footer.css';
 import food from './images/food1.jpg'
 import Header from './src/components/Header';
 import Body from './src/components/Body';
-                          
+import Footer from './src/components/Footer';                    
 
 
 

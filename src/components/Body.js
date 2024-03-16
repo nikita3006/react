@@ -1,5 +1,5 @@
 import ResCard from "./ResCard";
-import resObj from "./ResObj";
+import resObj from "../../utils/resObj";
 
 const Body = () => {
     return(
