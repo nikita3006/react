@@ -5,18 +5,33 @@
 
 .searchLayout{
     padding:15px 10px;
+   display:flex;
+   justify-content: space-around;
+   align-items: center;
+    
 }
 
 .searchInput {  
    width:500px;
-   border:2px solid grey;
-   margin-left: 350px;
+   margin-left: 50px;
    padding:10px;
    border-radius: 15px;
+   
+   
 }
 .searchLayout :hover {  
-   cursor: pointer;
+    cursor: pointer;
    
+ 
+ }
+ .filter-btn{
+    width:200px;
+    padding:10px;
+    border-radius: 15px;
+   
+ }
+ .filter-btn:hover{
+    cursor: pointer;
  }
 .resList{
     display: flex;
