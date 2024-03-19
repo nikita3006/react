@@ -93,6 +93,26 @@ npm run build
 - Components should start with a capital letter to differentiate them from regular HTML elements.
 
 
-## there will be two type of export 
-- export default -- use when we have to export only one component.
--naming export -- use when we have to export more than one components.
+
+## Exporting Components in JavaScript Modules
+
+When exporting components in JavaScript modules, it's essential to distinguish between default exports and named exports.
+
+### Default Export
+Use `export default` when you have to export only one component from a file.
+
+**Import for Default Export:**
+import YourComponent from './path/to/YourComponent';
+
+
+### Named Export
+
+Use named exports when you have to export more than one component from a file.
+**Import for Named Export:**
+import { Component1, Component2 } from './path/to/YourComponent';
+
+
+## Remember, it's a good practice to keep your components concise and avoid writing excessively long code within a single component file. Consider breaking down your components into smaller, reusable parts to maintain readability and modularity.
+
+
+
