@@ -2,7 +2,7 @@ import food from '../../images/food1.jpg'
 
 const ResCard = ({props}) => {
     // const {title,cuisine,rating,time} =props; //destructuring
-    console.log(props);
+    // console.log(props);
     return (
         <div className='layout'>
             <div className='container'>
