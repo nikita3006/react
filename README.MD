@@ -195,6 +195,43 @@ Instead of a boring blank screen, we quickly sketch out the basic layout of the 
 **Step 2: Call the API**  
 Behind the scenes, we ask the server for more info to make the webpage even better. It's like adding extra layers to a drawing to make it really stand out!
 
+# Hooks
+
+Hooks are nothing but a normal javascript function that react gives us and it has it's own use-case.
+
+## `useEffect`
+
+**Purpose:**  
+Imagine you want to do something after your webpage finishes loading. You can use `useEffect` for that.
+
+**How it works:**  
+`useEffect` takes two things. First, a function that says what you want to do after the page loads. Second, a list of things it should keep an eye on.
+
+**Example:**  
+Let's say you want to show a message after a user clicks a button. You write that in a `useEffect`. When the button is clicked, and the page is ready, your message shows up!
+
+
+# Fetch-it: The JavaScript Superpower
+
+Fetching data from an API is like having a superpower in JavaScript.
+
+## Understanding Cross-Origin Policy
+
+Sometimes, our browser stops us from calling APIs from one website to another. This is called the "cross-origin policy."
+
+**What it means:**  
+If the website where your code is running (the origin) is different from the one hosting the API, your browser will give you an error.
+
+**Why it matters:**  
+This policy helps protect your data from being accessed by unauthorized websites.
+
+**Solution:**  
+To work around this policy, you can use techniques like JSONP or CORS (Cross-Origin Resource Sharing) to allow your website to fetch data from other origins.
+
+Understanding this policy is key to mastering the art of fetching data securely in JavaScript!
+
+
+
 
 
 
