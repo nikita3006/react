@@ -1,4 +1,4 @@
-import food from '../../images/food1.jpg'
+
 
 const ResCard = ({props}) => {
     // const {title,cuisine,rating,time} =props; //destructuring
@@ -7,14 +7,14 @@ const ResCard = ({props}) => {
         <div className='layout'>
             <div className='container'>
                 <div className='resCard'>
-                    <span className='card-image'>
-                        <img src={food} alt='card-image' className='image'/>
-                    </span>
                     <div className='card-details'>
-                        <h3>{props.title}</h3>
-                        <h4>{props.cuisine}</h4>
-                        <h5>{props.rating} stars</h5>
-                        <h5>{props.time} min</h5>
+                    <span className='card-image'>
+                        <img src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + props.info.cloudinaryImageId} alt='card-image' className='image'/>
+                    </span>
+                        <h3>{props.info.name}</h3>
+                        <h4>{props.info.cuisines}</h4>
+                        <h5>{props.info.avgRating} stars</h5>
+                        <h5>{props.info.sla.deliveryTime} min</h5>
                     </div>
                 </div>
             </div>
