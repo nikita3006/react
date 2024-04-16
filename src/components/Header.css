@@ -1,0 +1,43 @@
+.header{
+  background-color: #f0f0f0;
+    display: flex;   
+}
+.logo{
+    width:60px;
+    height:60px;
+    padding:20px 25px;
+}
+.nav-items{
+   
+    
+}
+.nav-items ul{
+    display:flex ;
+    justify-content: space-around; 
+    text-align: center;
+    margin-left: 750px;
+    font-size: larger;
+    color:rgb(155, 63, 63);
+    margin-top: 20px;
+    background-color: #f0f0f0;
+}
+.nav-items ul li{
+    padding:20px;
+    list-style-type: none; 
+}
+.nav-items li:hover{
+    background-color: rgb(13, 135, 74);
+    cursor: pointer;
+}
+.btn{
+    width:5rem;
+    height:2rem;
+    font-size: large;
+    color:white;
+    margin-top: 15px;
+   
+}
+.btn:hover{
+    background-color: rgb(13, 135, 74);
+    cursor: pointer;
+}
