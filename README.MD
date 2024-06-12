@@ -231,6 +231,30 @@ To work around this policy, you can use techniques like JSONP or CORS (Cross-Ori
 Understanding this policy is key to mastering the art of fetching data securely in JavaScript!
 
 
+# React `useEffect` Hook Usage
+
+## No Dependencies Array
+If you do not provide a dependencies array, the `useEffect` hook is called on every component render.
+
+
+1-->   useEffect(() => {
+            // This code runs after every render
+        });
+
+## Empty Dependencies Array
+If you provide an empty dependencies array, the useEffect hook is called only on the initial render. It runs once when the component mounts and does not run again.
+
+2-->    useEffect(() => {
+            // This code runs only once after the initial render
+        }, []);
+
+## Dependencies in Array
+If you provide dependencies in the array, the useEffect hook is called whenever any of the dependencies change. This allows you to control when the side effect runs based on specific state or props changes.
+
+3-->    useEffect(() => {
+            // This code runs after the initial render
+            // and whenever any dependency in the array changes
+        }, [dependency1, dependency2]);
 
 
 
