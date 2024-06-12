@@ -1,27 +1,33 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./App.css";
+import "./src/components/Header.css";
+import "./src/components/Footer.css";
+import Header from "./src/components/Header";
+import Body from "./src/components/Body";
+import Footer from "./src/components/Footer";
+import About from "./src/components/About";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import React from 'react';
-import  ReactDOM  from 'react-dom/client';
-import './App.css';
-import './src/components/Header.css';
-import './src/components/Footer.css';
-import food from './images/food1.jpg'
-import Header from './src/components/Header';
-import Body from './src/components/Body';
-import Footer from './src/components/Footer';                    
+const AppLayout = () => {
+  return (
+    <div className="app">
+      <Header />
+      <Body />
+      <Footer />
+    </div>
+  );
+};
 
-
-
-
-const AppLayout = () =>{
-  return(
-   <div className='app'>
-      <Header/>
-        <Body/>
-      <Footer/>
-   </div>
-  )
-}
-
-
+const appPath = createBrowserRouter([
+  {
+    path: "/",
+    element: <AppLayout />,
+  },
+  {
+    path: "/about",
+    element: <About />,
+  },
+]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout/>)
+root.render(<RouterProvider router={appPath} />);

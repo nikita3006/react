@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import logo from '../../images/logo..foodie.png';
 
 
@@ -8,8 +8,12 @@ const Header = () => {
   const handlerClick = (e) =>{
     e.preventDefault()
     setBtnClick(!btnClick);
-    console.log("btn click")
+    // console.log("btn click")
   }
+// console.log("header")
+  useEffect(()=>{
+  //  console.log("useEffect") 
+  },[btnClick])
     return(
        <div className='header'>
           <div className='logo-image'>
